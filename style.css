@@ -1,0 +1,172 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg,#4a001f,#a10045);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden; /* مفيش سكرول في الأول */
+  color: white;
+}
+
+.container{
+    width: 90%;
+    max-width: 500px; /* كان 400 */
+    height: auto;
+min-height: auto;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(3px);
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(255,255,255,.15);
+    z-index: 2;
+}
+
+.photo{
+  width:250px;
+  height:350px;
+  object-fit:cover;
+  border-radius:20px;
+  border:3px solid white;
+  margin-bottom:15px;
+}
+
+input{
+  width:90%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  margin-top:10px;
+}
+
+button{
+  margin-top:10px;
+  padding:12px 25px;
+  border:none;
+  border-radius:15px;
+  background:#ff4d88;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+#content{
+  display:none;
+}
+
+.heart{
+  font-size:60px;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+  50%{
+    transform:scale(1.15);
+  }
+}
+
+.floating{
+  position:absolute;
+  font-size:25px;
+  animation:float 15s linear infinite;
+}
+
+@keyframes float{
+  from{
+    transform:translateY(200vh);
+    opacity:1;
+  }
+  to{
+    transform:translateY(-800px);
+    opacity:0;
+  }
+}
+.next-btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:15px;
+  background:#ff4d88;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.next-btn:hover{
+  transform:scale(1.05);
+}
+/* العنوان */
+h1{
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: white;
+}
+
+/* مربع إدخال الباسورد */
+input{
+    width: 90%;
+    max-width: 320px;
+    padding: 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* زرار Unlock */
+button{
+    margin-top: 18px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 14px;
+    background: #ff5b99;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.message-container{
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto;
+    min-height: auto;
+}
+#message1,
+#message2,
+#message3,
+#message4{
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    box-sizing: border-box;
+}
